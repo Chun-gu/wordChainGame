@@ -39,7 +39,7 @@ body {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-.inputBox__nextWord:focus + .underline {
+.inputBox__nextWord:focus + .inputBox__underline {
   width: 100%;
   left: 0;
 }
