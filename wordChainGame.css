@@ -1,0 +1,55 @@
+@import "/reset.css";
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.inputBox__nextWord {
+  line-height: 2em;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.underline {
+  display: block;
+  position: relative;
+  left: 50%;
+  height: 2px;
+  background-color: red;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.inputBox__nextWord:focus + .underline {
+  width: 100%;
+  left: 0;
+}
+
+.inputBox__nextWord::placeholder {
+  text-align: center;
+}
+
+.result__currentWord {
+  font-size: 48px;
+  color: red;
+  margin-top: 20px;
+}
