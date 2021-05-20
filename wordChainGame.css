@@ -29,7 +29,7 @@ body {
   outline: none;
 }
 
-.underline {
+.inputBox__underline {
   display: block;
   position: relative;
   left: 50%;
