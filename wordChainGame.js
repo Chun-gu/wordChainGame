@@ -1,7 +1,8 @@
 const currentWord = document.getElementById("currentWord");
 const nextWord = document.getElementById("nextWord");
-nextWord.addEventListener("keydown", onEnter);
 const wordArr = [];
+
+nextWord.addEventListener("keydown", onEnter);
 
 function onEnter(e) {
   if (e.key === "Enter") {
